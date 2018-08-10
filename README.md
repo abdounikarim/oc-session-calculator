@@ -6,8 +6,8 @@ This application help you to show your sessions in real time.
 
 This application uses a number of open source projects to work properly:
 
-* [Twitter Bootstrap] 
-* [jQuery]
+* [Twitter Bootstrap] - http://getbootstrap.com/
+* [jQuery] - https://jquery.com/
 
 ### Installation
 
