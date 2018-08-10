@@ -1,0 +1,26 @@
+h1{
+    font-size: 24px;
+}
+.table td{
+    padding: 0;
+    border: solid 2px black;
+}
+#total, .left{
+    font-weight: bold;
+}
+.tfoot{
+    background-color: black;
+    color: white;
+}
+.table .pleft{
+    padding-left: 10px;
+}
+.retard{
+    font-weight: bold;
+    background-color: #E24141;
+}
+.avance {
+    font-weight: bold;
+    color: black;
+    background-color: #81F495;
+}
