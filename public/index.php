@@ -3,15 +3,16 @@
 <head>
 	<title>OC calculator session tool</title>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="style.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <?php
 
-require 'ics.php';
+require '../config.php';
+require '../src/ics.php';
 
 /* Replace the URL / file path with the .ics url */
-$file = "";
+$file = CALENDAR_URL;
 /* Getting events from isc file */
 $obj = new ics();
 $icsEvents = $obj->getIcsEventsAsArray( $file );
@@ -51,8 +52,8 @@ echo $html.'</table></div></div>';
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-<script src="myDate.js"></script>
-<script src="myInfo.js"></script>
-<script src="app.js"></script>
+<script src="js/myDate.js"></script>
+<script src="js/myInfo.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
