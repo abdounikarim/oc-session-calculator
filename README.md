@@ -17,5 +17,15 @@ $ git clone https://github.com/abdounikarim/oc-session-calculator
 
 ### Use
 
-Open the index.php file and paste your calendar url in the `$file`.
-Enjoy !
+Create a `config.php file at the root of your project with the next data : 
+```php
+<?php
+const CALENDAR_URL = "url_of_your_calendar";
+```
+Replace `"url_of_your_calendar"` with your calendar url.
+
+### Check 
+Test your work at `http://yourdomain/public/index.php`
+If you need, you can create an `.htaccess` by your own.
+
+Enjoy !`
