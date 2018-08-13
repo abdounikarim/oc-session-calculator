@@ -2,7 +2,6 @@ var MyDate = {
     data: [],
     addData: function() {
         $('.line').each(function(index, value){
-            var line = $(value).text();
 
             var childs = $(this).children();
 

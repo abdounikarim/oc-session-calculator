@@ -1,6 +1,6 @@
 	$( document ).ready(function() {
-	    MyInfo.changeInfos();
 	    MyDate.init();
+        MyInfo.changeInfos();
 		MyDate.addData();
 
 		var blockResume = '<div id="bloc" class="col-12 col-md-6 text-center">' +
