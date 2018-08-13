@@ -3,7 +3,7 @@
 	    MyDate.init();
 		MyDate.addData();
 
-		var blockResume = '<div id="bloc" class="col-md-6 text-center">' +
+		var blockResume = '<div id="bloc" class="col-12 col-md-6 text-center">' +
 			'<h1>Session en cours ce mois-ci</h1>' +
 			'<table class="table">' +
 				'<tr class="head">' +

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>OC calculator session tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
@@ -17,7 +18,7 @@ $file = CALENDAR_URL;
 $obj = new ics();
 $icsEvents = $obj->getIcsEventsAsArray( $file );
 unset( $icsEvents [1] );
-$html = '<div class="container-fluid"><div class="row"><table class="table table-dark table-striped col-md-6 text-center"><tr><th>Nbre</th><th> Élève </th><th> Date de début de session </th><th> Statut </tr>';
+$html = '<div class="container-fluid"><div class="row"><table class="table table-dark table-striped col-12 col-md-6 text-center"><tr><th>Nbre</th><th> Élève </th><th> Date de début de session </th><th> Statut </tr>';
 $i = 1;
 
 $today = new DateTime();
