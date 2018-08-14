@@ -83,6 +83,8 @@ var MyDate = {
         MyDate.date = new Date();
         MyDate.day = MyDate.date.getDate();
         MyDate.month = MyDate.date.getMonth();
+        MyDate.hours = MyDate.date.getHours();
+        MyDate.minutes = MyDate.date.getMinutes();
 
         if(MyDate.day < 10) {
             MyDate.day = '0'+MyDate.day.toString();
@@ -91,7 +93,14 @@ var MyDate = {
         if(MyDate.month < 10) {
             MyDate.month = '0'+MyDate.month.toString();
         }
+        if(MyDate.hours < 10) {
+            MyDate.hours = '0'+MyDate.hours.toString();
+        }
+        if(MyDate.minutes < 10) {
+            MyDate.minutes = '0'+MyDate.minutes.toString();
+        }
+
         //Date du jour
-        MyDate.today = MyDate.day+'/'+MyDate.month+'/'+MyDate.date.getFullYear().toString()+' '+MyDate.date.getHours()+':'+MyDate.date.getMinutes();
+        MyDate.today = MyDate.day+'/'+MyDate.month+'/'+MyDate.date.getFullYear().toString()+' '+MyDate.hours+':'+MyDate.minutes;
     }
 }

@@ -45,7 +45,6 @@ var MyInfo = {
         $( ".status" ).each(function( index, value) {
             var getValue = $(value);
             var newValue = $(value).text();
-            console.log(MyDate.today);
             if(newValue.indexOf('TENTATIVE') === 0) {
                 value = '<td class="status">Planifiée</td>';
                 getValue.replaceWith(value);
@@ -53,12 +52,8 @@ var MyInfo = {
                 value = '<td class="status">Annulée</td>';
                 getValue.replaceWith(value);
             } else {
-                //Comparer date du jour à celle de session
-                //Si session > date du jour => planifiée
-                //Sinon, effectuée
                 var parent = $(this).parent();
                 var children = $(parent).children();
-                console.log($(children[2]).text());
                 var date = $(children[2]).text();
                 if(date < MyDate.today) {
                     value = '<td class="status">Effectuée</td>';
