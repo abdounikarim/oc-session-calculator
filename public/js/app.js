@@ -5,6 +5,7 @@
 
 		var blockResume = '<div id="bloc" class="col-12 col-md-6 text-center">' +
 			'<h1>Session en cours ce mois-ci</h1>' +
+            '<button class="btn" onclick="location.reload();">Afficher les sessions du jour</button>' +
 			'<table class="table">' +
 				'<tr class="head">' +
             		'<td>Nbre</td>' +
@@ -20,6 +21,7 @@
 			MyInfo.generateLine(i, MyInfo.results[i]);
 		}
 		MyInfo.total();
+		MyInfo.selectStudent();
 	});
 	/*
 	couleur pour sessions restantes en fonction du nombre

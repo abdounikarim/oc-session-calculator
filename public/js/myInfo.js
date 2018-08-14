@@ -125,6 +125,25 @@ var MyInfo = {
         $('.head').after(line);
         this.changeColorLine('line' + sessionLeft[0], sessionLeft[0]);
     },
+    selectStudent: function(){
+        $("#bloc tr").click(function () {
+            //Vérifier qu'une ligne n'est pas déjà en rouge
+            //Récupérer le nom de l'étudiant
+            var children = $(this).children();
+            var name = $(children[1]).text();
+            //Faire une boucle dans le tableau des sessions
+            $( ".line" ).each(function( index, element ) {
+                var children = $(element).children();
+                var student = $(children[1]).text();
+                //Si étudiant correspond, changer la couleur de fond
+                if(name == student) {
+                    $(this).addClass('active').css({'background-color': '#A9E4EF', 'color':'black'});
+                } else {
+                    $(this).removeClass('active').css({'background-color': 'black', 'color': 'white'});
+                }
+            });
+        });
+    },
     showMessageCanceledSession: function() {
         var info = '<tr class="tfoot"><td class="text-center retard" colspan="6">Les soutenances sont prises en compte dans le calcul. <br>Les sessions annulées ne sont pas prises en compte dans le calcul</td></tr>';
         $("#bloc tbody").append(info);
