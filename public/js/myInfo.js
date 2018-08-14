@@ -58,6 +58,7 @@ var MyInfo = {
                 if(date < MyDate.today) {
                     value = '<td class="status">Effectuée</td>';
                 } else {
+                    $(parent).css({'background-color': '#81F495', 'color': 'black'});
                     value = '<td class="status">Planifiée</td>';
                 }
                 getValue.replaceWith(value);

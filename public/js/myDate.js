@@ -103,4 +103,4 @@ var MyDate = {
         //Date du jour
         MyDate.today = MyDate.day+'/'+MyDate.month+'/'+MyDate.date.getFullYear().toString()+' '+MyDate.hours+':'+MyDate.minutes;
     }
-}
+};
