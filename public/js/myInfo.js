@@ -73,7 +73,7 @@ var MyInfo = {
         if(MyInfo.className === 'retard') {
             for (var i = 0; i <= total; i++) {
                 var check = i + done;
-                var checkTotal = Math.floor(check / total * 100);
+                var checkTotal = Math.ceil(check / total * 100);
                 if(checkTotal === diffDate) {
                     var catching = '<tr class="tfoot"><td class="text-left pleft" colspan="3">Session à rattraper pour être dans les temps : </td class="text-center"><td colspan="3" class="text-center retard">' +  i + '</td></tr>';
                     $("#bloc tbody").append(catching);
